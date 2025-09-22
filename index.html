@@ -3,185 +3,173 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>AircondGO | Fast On-Demand Aircond Service</title>
+  <title>AircondGO - On-Demand Aircond Service</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-family: 'Segoe UI', sans-serif;
-    }
-
     body {
-      line-height: 1.6;
-      background-color: #f4f4f4;
-      color: #333;
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #0e0e0e;
+      color: #fff;
     }
-
     header {
-      background-image: url('https://images.unsplash.com/photo-1604147495793-7f3f35d46882?auto=format&fit=crop&w=1470&q=80');
-      background-size: cover;
-      background-position: center;
-      height: 60vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
+      background: linear-gradient(135deg, #6a0dad, #000000);
       text-align: center;
-      padding: 20px;
+      padding: 40px 20px;
     }
-
+    header img {
+      width: 120px;
+      margin-bottom: 15px;
+    }
     header h1 {
-      font-size: 3rem;
-      text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+      font-size: 2.5em;
+      margin: 0;
     }
-
+    header p {
+      color: #ccc;
+    }
     nav {
-      background-color: #0097a7;
+      background: #1c1c1c;
       display: flex;
       justify-content: center;
+      padding: 10px 0;
     }
-
     nav a {
-      color: white;
-      padding: 15px 20px;
-      display: inline-block;
+      color: #ccc;
+      margin: 0 15px;
       text-decoration: none;
       font-weight: bold;
     }
-
     nav a:hover {
-      background-color: #007c91;
+      color: #fff;
     }
-
     section {
       padding: 40px 20px;
       max-width: 1000px;
       margin: auto;
     }
-
     h2 {
-      color: #0097a7;
-      margin-bottom: 20px;
+      color: #b084ff;
     }
-
-    .steps, .services, .technician {
-      display: grid;
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
       gap: 20px;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      justify-content: center;
     }
-
     .card {
-      background: white;
+      background: #1f1f1f;
+      border-radius: 10px;
       padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      width: 300px;
+      text-align: center;
     }
-
     .card img {
       width: 100%;
-      height: 180px;
-      object-fit: cover;
-      border-radius: 5px;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+    .card h3 {
+      color: #fff;
       margin-bottom: 10px;
     }
-
+    .card p {
+      color: #aaa;
+      font-size: 0.95em;
+    }
+    .checklist {
+      text-align: left;
+    }
+    .checklist li {
+      margin-bottom: 10px;
+    }
+    .contact {
+      background: #121212;
+      padding: 20px;
+      border-radius: 10px;
+    }
     footer {
       text-align: center;
       padding: 20px;
-      background: #0097a7;
-      color: white;
-      margin-top: 40px;
+      background: #1a1a1a;
+      color: #777;
+      font-size: 0.9em;
     }
-
-    @media screen and (max-width: 600px) {
-      header h1 {
-        font-size: 2rem;
+    @media(max-width: 768px) {
+      .card-container {
+        flex-direction: column;
+        align-items: center;
       }
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>AircondGO</h1>
-  </header>
+<header>
+  <img src="https://i.ibb.co/FxzK8Nf/aircondgo-logo.png" alt="AircondGO Logo" />
+  <h1>AircondGO</h1>
+  <p>Fast. Reliable. On-Demand Aircond Service & Repair.</p>
+</header>
 
-  <nav>
-    <a href="#how">How It Works</a>
-    <a href="#services">Services</a>
-    <a href="#technicians">Technicians</a>
-    <a href="#contact">Contact</a>
-  </nav>
+<nav>
+  <a href="#how">How It Works</a>
+  <a href="#services">Services</a>
+  <a href="#techs">For Technicians</a>
+  <a href="#contact">Contact</a>
+</nav>
 
-  <section id="how">
-    <h2>How It Works</h2>
-    <div class="steps">
-      <div class="card">
-        <h3>1. Choose Your Aircond & Problem</h3>
-        <p>Split unit? Cassette? Leaking? Just select from the menu.</p>
-      </div>
-      <div class="card">
-        <h3>2. Pay Instantly (FPX)</h3>
-        <p>Your job is created immediately after secure payment.</p>
-      </div>
-      <div class="card">
-        <h3>3. Nearby Technician Accepts</h3>
-        <p>We’ll find a technician near you within 30 minutes.</p>
-      </div>
-      <div class="card">
-        <h3>4. No Technician? Auto Refund</h3>
-        <p>If no one accepts within 30 minutes, refund goes to e-wallet.</p>
-      </div>
-    </div>
-  </section>
+<section id="how">
+  <h2>How It Works</h2>
+  <ol>
+    <li><strong>Choose Aircond Type & Problem</strong><br>Split, Cassette, Leaking, Not Cold? Just select from menu.</li>
+    <li><strong>Make Instant FPX Payment</strong><br>Instant payment, job is created immediately.</li>
+    <li><strong>System Finds Nearby Technician</strong><br>Matching process starts within 30 minutes.</li>
+    <li><strong>No Technician? Auto Refund</strong><br>Refund to wallet if no tech accepts in 30 min.</li>
+    <li><strong>Technician Accepted</strong><br>You'll receive ETA, name & contact.</li>
+  </ol>
+</section>
 
-  <section id="services">
-    <h2>Our Services</h2>
-    <div class="services">
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1629904853893-dbb546120225?auto=format&fit=crop&w=1470&q=80" alt="Wall Unit">
-        <h3>Wall Unit Service</h3>
-        <p>Cleaning, inspection & troubleshooting for standard wall units.</p>
-      </div>
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1601297136070-a1030ac52c5d?auto=format&fit=crop&w=1470&q=80" alt="Cassette">
-        <h3>Cassette Unit</h3>
-        <p>Service & gas refill for cassette-type airconds in offices & shops.</p>
-      </div>
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1613467663099-1e98b24e35f6?auto=format&fit=crop&w=1470&q=80" alt="Ceiling">
-        <h3>Ceiling Ducted</h3>
-        <p>Professional repair & cleaning for ceiling ducted aircond units.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="technicians">
-    <h2>For Technicians</h2>
-    <div class="technician">
-      <div class="card">
-        <h3>✅ Flexible Time</h3>
-        <h3>✅ Weekly Payout</h3>
-        <h3>✅ Work Near You</h3>
-        <br>
-        <a href="#">Join Us As Technician</a>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact">
-    <h2>Contact Us</h2>
+<section id="services">
+  <h2>Our Services</h2>
+  <div class="card-container">
     <div class="card">
-      <p>📞 WhatsApp: <a href="https://wa.me/60178991122">+60 12 4185142</a></p>
-      <p>📧 Email: aircondgo01@gmail.com</p>
-      <p>📍 Service Areas: Penang (more coming soon)</p>
+      <img src="https://images.unsplash.com/photo-1596075780750-81249df16d9a" alt="Wall Unit">
+      <h3>Wall Unit Service</h3>
+      <p>Cleaning, inspection & troubleshooting for standard wall units.</p>
     </div>
-  </section>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1622328420318-b8ab0b4cda29" alt="Cassette Unit">
+      <h3>Cassette Unit</h3>
+      <p>Service & gas refill for cassette-type airconds in offices & shops.</p>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1583855280900-9e98ee44dd4a" alt="Ceiling Ducted">
+      <h3>Ceiling Ducted</h3>
+      <p>Professional cleaning for ceiling ducted aircond units.</p>
+    </div>
+  </div>
+</section>
 
-  <footer>
-    &copy; 2025 AircondGO. All rights reserved.
-  </footer>
+<section id="techs">
+  <h2>For Technicians</h2>
+  <ul class="checklist">
+    <li>✅ Flexible Time</li>
+    <li>✅ Weekly Payout</li>
+    <li>✅ Work Near You</li>
+  </ul>
+  <p><a href="#">Join Us As Technician</a></p>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Contact Us</h2>
+  <p>📱 WhatsApp: <a href="https://wa.me/60123456789" style="color:#b084ff;">+6012-4185142</a></p>
+  <p>📧 Email: aircondgo01@gmail.com</p>
+  <p>📍 Service Areas: Penang (more coming soon)</p>
+</section>
+
+<footer>
+  &copy; 2025 AircondGO. All rights reserved.
+</footer>
 
 </body>
 </html>
